@@ -2,6 +2,7 @@ import os
 import sys
 from urllib.parse import urlparse
 import mlflow
+import dagshub
 
 from networksecurity.exception.exception import NetworkSecurityException 
 from networksecurity.logging.logger import logging
@@ -37,6 +38,7 @@ class ModelTrainer:
         
     def track_mlflow(self, best_model, classificationmetric):
             # Uses the URI you set in os.environ for your oskanabe55 repository
+            #dagshub.init(repo_owner='oskanabe55', repo_name='NetworkSecurity', mlflow=True)
             mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
             
             with mlflow.start_run():

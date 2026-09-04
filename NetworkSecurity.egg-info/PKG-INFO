@@ -7,8 +7,16 @@ Requires-Dist: python-dotenv
 Requires-Dist: pandas
 Requires-Dist: numpy
 Requires-Dist: certifi
-Requires-Dist: pymongo[srv]==3.6
+Requires-Dist: pymongo[srv]
 Requires-Dist: scikit-learn
+Requires-Dist: mlflow
+Requires-Dist: pyyaml
+Requires-Dist: dagshub
+Requires-Dist: dill
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: python-multipart
+Requires-Dist: jinja2
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
